@@ -25,7 +25,7 @@ def main():
             result_str = f'{timestamp}, Download: {download_speed:.2f} Mbps, Upload: {upload_speed:.2f} Mbps, Ping: {ping} ms'
             print(result_str)
             write_to_file(file_path, result_str)
-            time.sleep(60)  # Wait for 1 minute before checking again
+            time.sleep(60)  
 
     except KeyboardInterrupt:
         print("Speed test stopped.")
